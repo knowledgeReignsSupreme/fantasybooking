@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/fantasy-booking/static/css/main.512c4ff8.chunk.css",
+    "main.js": "/fantasy-booking/static/js/main.09214296.chunk.js",
+    "main.js.map": "/fantasy-booking/static/js/main.09214296.chunk.js.map",
+    "runtime-main.js": "/fantasy-booking/static/js/runtime-main.401c71cd.js",
+    "runtime-main.js.map": "/fantasy-booking/static/js/runtime-main.401c71cd.js.map",
+    "static/js/2.62b55ac2.chunk.js": "/fantasy-booking/static/js/2.62b55ac2.chunk.js",
+    "static/js/2.62b55ac2.chunk.js.map": "/fantasy-booking/static/js/2.62b55ac2.chunk.js.map",
+    "static/js/3.828f9f88.chunk.js": "/fantasy-booking/static/js/3.828f9f88.chunk.js",
+    "static/js/3.828f9f88.chunk.js.map": "/fantasy-booking/static/js/3.828f9f88.chunk.js.map",
+    "index.html": "/fantasy-booking/index.html",
+    "static/css/main.512c4ff8.chunk.css.map": "/fantasy-booking/static/css/main.512c4ff8.chunk.css.map",
+    "static/js/2.62b55ac2.chunk.js.LICENSE.txt": "/fantasy-booking/static/js/2.62b55ac2.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/fantasy-booking/static/media/true.644d0c65.png",
+    "static/media/Phone Logo.ec1d3a07.svg": "/fantasy-booking/static/media/Phone Logo.ec1d3a07.svg",
+    "static/media/Vector.49bb48f1.svg": "/fantasy-booking/static/media/Vector.49bb48f1.svg",
+    "static/media/fairy.0e5aad41.jpg": "/fantasy-booking/static/media/fairy.0e5aad41.jpg",
+    "static/media/land2.69f686eb.jpg": "/fantasy-booking/static/media/land2.69f686eb.jpg",
+    "static/media/land3.de76dbbb.jpg": "/fantasy-booking/static/media/land3.de76dbbb.jpg",
+    "static/media/unicorn.3d00c71b.jpg": "/fantasy-booking/static/media/unicorn.3d00c71b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.401c71cd.js",
+    "static/js/2.62b55ac2.chunk.js",
+    "static/css/main.512c4ff8.chunk.css",
+    "static/js/main.09214296.chunk.js"
+  ]
+}
