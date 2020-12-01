@@ -1,0 +1,65 @@
+.attractions__filter__wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 3rem;
+  justify-content: center;
+  margin-top: 1rem;
+  label{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 1px solid black;
+
+  }
+  input{
+    border: 2px solid $color-main-dark;
+    padding-left: 1rem;
+    width: 30rem;
+    border-radius: 15px;
+  }
+  &__input{
+    display: flex;
+      margin-bottom: 2rem;
+    
+  }
+}
+.attractions__filter__button{
+  @include transparent-button;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  position: relative;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter__icon{
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.wrong__filter{
+  @include section-header;
+  margin-left: 3rem;
+}
+
+@media #{$phone}{
+  .attractions__filter__wrapper{
+    margin-left: 1rem;
+    width: 100%;
+
+  label{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+}
+.attractions__filter__button{
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.wrong__filter{
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+}

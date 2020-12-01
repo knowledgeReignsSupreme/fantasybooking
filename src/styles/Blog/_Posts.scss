@@ -1,0 +1,162 @@
+.blog__posts__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.blog {
+  &__post {
+    display: flex;
+    height: 40rem;
+    width: 70rem;
+    border: 4px solid $color-main-dark;
+    border-radius: 25px;
+    margin: 2rem 2rem 10rem 0;
+    transition: all .5s ease-in;
+
+
+    &:hover {
+      transform: scale(1.05);
+      border: 6px solid $color-main-dark;
+      z-index: 5;
+
+    }
+
+    &__text {
+      margin-left: 2rem;
+      width: 100%;
+      margin-right: 1rem;
+    }
+
+    &__img {
+      height: 100%;
+      width: 40%;
+      border-radius: 25px;
+
+    }
+
+    &__header {
+      @include section-header-sub;
+      width: 100%;
+      border-bottom: 2px solid black;
+    }
+
+    &__description {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-top: 1rem;
+      width: 100%;
+
+    }
+
+    &__author {
+      font-size: 2.8rem;
+      margin-top: 1rem;
+    }
+
+    &__button {
+      @include border-bottom-bottun;
+      margin-top: 2rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+
+.blog__header__wrapper{
+  background-image: 
+   url('../../design/blogheader 1.jpg') ;
+  // filter: hue-rotate(30deg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__header{
+    @include section-header;
+    &-sub{
+      @include section-header-sub;
+        span{
+        @include section-header-sub-span;
+        border-color: $color-main-light;
+        border-width: 3px;
+      }
+    }
+  }
+}
+
+
+
+@media #{$phone},
+#{$tab-p} {
+.blog__header__wrapper{
+  margin-top: 12rem;
+  height: 30vh;
+  align-items: flex-start;
+  &__header{
+    @include section-header;
+    margin-left: 1rem;
+
+    &-sub{
+      @include section-header-sub;
+      margin-left: 1rem;
+
+        span{
+        @include section-header-sub-span;
+        border-color: $color-main-light;
+        border-width: 5px;
+      }
+    }
+  }
+}
+  .blog__posts__wrapper {
+    margin-top: 4rem;
+  }
+
+  .blog {
+    justify-content: center;
+    transition: none;
+    &__post {
+      width: 100vw !important;
+    margin: 2rem 0 4rem 1rem;
+
+      &:hover {
+        transform:none !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 930px) {
+  .blog {
+    &__post {
+      width: 95vw;
+      transition: none;
+      &:hover {
+        transform:none !important;
+      }
+    }
+  }
+}
+
+@media #{$phone} {
+  .blog {
+    &__post {
+      width: 95vw;
+      height: 50rem;
+      transition: none;
+      &:hover{
+        transform:none !important;
+      }
+    }
+  }
+}

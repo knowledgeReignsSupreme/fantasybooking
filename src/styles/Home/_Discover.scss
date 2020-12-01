@@ -1,0 +1,151 @@
+.discover {
+  padding: 5rem 0 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.discover__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35%;
+}
+
+.discover__text__header {
+  @include section-header;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+
+  span {
+    @include section-header-sub-span;
+    padding-left: .3rem;
+  }
+}
+
+.discover__text__header__sub {
+  @include section-header-sub;
+}
+
+
+.discover__grid {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(3rem, 8.5rem));
+  grid-template-columns: repeat(6, minmax(3rem, 14rem));
+  grid-gap: 2rem;
+  width: 50.8%;
+  margin-right: 7rem;
+  position: relative;
+
+  .disocver__grid__img {
+    cursor: pointer;
+    transition: all .5s ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 10px solid $color-secondary-dark;
+      border-spacing: 3rem;
+      z-index: 4;
+    }
+
+    &1 {
+      grid-row: 1 / 4;
+      grid-column: 1 / 5;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+    }
+
+    &2 {
+      grid-row: 4 / 7;
+      grid-column: 1 / 5;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    &3 {
+
+      grid-row: 1 / 4;
+      grid-column: 5 / 7;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    &4 {
+      grid-row: 4 / -1;
+      grid-column: 5 / 7;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+}
+
+@media #{$big-desktop}{
+  .discover__grid {
+    display: grid;
+    grid-template-rows: repeat(6, minmax(3rem, 8.5rem));
+    grid-template-columns: repeat(6, minmax(3rem, 17rem));
+    grid-gap: 2rem;
+    width: 48%;
+    margin-right: 5rem;
+    position: relative;
+  }
+}
+
+@media #{$tab-l} {
+  .discover {
+    padding: 5rem 0 5rem 3rem;
+  }
+
+}
+
+@media #{$tab-p},
+#{$phone} {
+  .discover {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 6rem 0;
+
+    &__text {
+      align-self: flex-start;
+      padding: 0 0 0 4rem !important;
+      width: 100%;
+      &__header__sub {
+        margin-bottom: 8rem;
+      }
+    }
+  }
+
+  .discover__grid {
+    grid-template-rows: repeat(6, minmax(3rem, 8.5rem));
+    grid-template-columns: repeat(6, minmax(3rem, 25rem)) !important;
+    width: 95%;
+    margin-right: 0;
+    margin-left: 3rem;
+  }
+}
+
+@media #{$phone} {
+  .discover {
+    &__text {
+      padding: 0 0 0 4rem;
+      width: 100%;
+
+      &__header__sub {
+        margin-bottom: 8rem;
+      }
+    }
+  }
+
+  .discover__grid {
+    width: 95%;
+  }
+}
+

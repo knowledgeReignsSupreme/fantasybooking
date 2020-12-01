@@ -1,0 +1,123 @@
+.contactinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0 5rem 10rem;
+
+  &__text {
+    &__header {
+      @include section-header;
+      margin-bottom: 2rem;
+      margin-top: -1.5rem;
+
+      &-sub {
+        @include section-header-sub;
+      }
+
+      span {
+        @include section-header-sub-span;
+      }
+    }
+  }
+
+  &__form {
+    width: 55%;
+    margin-right: 10rem;
+    padding: 5rem 0 5rem 0;
+    background: lightblue;
+    background-image: linear-gradient(125deg,
+        rgba(white, .9)0%,
+        rgba(white, .9)60%,
+        transparent 60%),
+      url('https://images.template.net/wp-content/uploads/2016/12/17104201/Fantasy-Landscape-Illustrations.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    border-radius: 3px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__each {
+      margin-bottom: 2rem;
+      align-items: center;
+
+      label {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-right: 1.5rem;
+        margin-left: 3rem;
+      }
+
+      input {
+        border-radius: 15px;
+        padding-left: 1rem;
+        width: 30rem;
+        border: 2px solid $color-secondary-dark;
+
+        &:focus {
+          border-color: $color-main-dark;
+        }
+      }
+    }
+
+    button {
+      @include border-bottom-bottun;
+      margin-left: 3rem;
+      width: max-content;
+      border-bottom-color: $color-main-dark;
+    }
+  }
+}
+
+.input__error{
+  color: red;
+  font-weight: bold;
+  margin-left: 3rem;
+  font-size: 2.3rem;
+}
+
+@media #{$tab-l} {
+  .contactinfo {
+    padding: 10rem 0 5rem 10rem;
+
+    &__form {
+      margin-right: 6rem;
+      width: 58%;
+    }
+  }
+}
+
+@media #{$tab-p},
+#{$phone} {
+  .contactinfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0 7rem 0;
+    margin-top: 3rem;
+    &__text {
+      padding: 0 0 0 4rem !important;
+      align-self: flex-start;
+      width: 100%;
+      &__header-sub {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__form {
+      margin-right: 0;
+      width: 90%;
+    }
+  }
+}
+
+
+@media #{$big-desktop} {
+  .contactinfo {
+    &__form {
+      margin-right: 3rem;
+    }
+  }
+}
