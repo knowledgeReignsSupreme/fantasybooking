@@ -1,54 +1,64 @@
-.singledestination{
+.singledestination {
 
-  &__wrapper{
-    .line{
+  &__wrapper {
+    .line {
       margin-top: 4rem;
     }
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    &__img{
+
+    &__img {
       width: 80rem;
       height: 40rem;
       margin-top: 1rem;
     }
-    &__text{
+
+    &__text {
       margin-top: 1rem;
       align-self: center;
       width: 80rem;
-      &__header{
+
+      &__header {
         @include section-header-sub;
         border-bottom: 2px solid $color-main-dark;
       }
-      &__duration{
+
+      &__duration {
         font-size: 3rem;
         margin-top: 1rem;
         font-weight: bold;
 
       }
-      &__price{
+
+      &__price {
         font-size: 3rem;
         margin-top: 1rem;
         font-weight: bold;
       }
-      &__story{
+
+      &__story {
         font-size: 3rem;
         margin-top: 1rem;
         font-weight: bold;
       }
-      &__rating{
+
+      &__rating {
         font-size: 3rem;
         margin-top: 1rem;
         font-weight: bold;
       }
-      &__available{
+
+      &__available {
         font-size: 3rem;
         margin-top: 1rem;
         font-weight: bold;
       }
-      &__button{
+
+      &__button {
         @include transparent-button;
         padding: 0 .5rem;
         border-width: 1px;
@@ -56,7 +66,8 @@
         margin-top: 1rem;
         transition: all .5s ease-out;
         width: 60%;
-        &__disabled{
+
+        &__disabled {
           @include transparent-button;
           padding: 0 .5rem;
           border-width: 1px;
@@ -65,7 +76,8 @@
           transition: all .5s ease-out;
           width: 80%;
           cursor: not-allowed;
-          span{
+
+          span {
             font-size: 1.5rem;
           }
         }
@@ -74,115 +86,131 @@
   }
 }
 
-.singledestination__info__wrapper-1{
+.singledestination__info__wrapper-1 {
   display: flex;
   flex-direction: column;
   width: 61%;
 }
-.singledestination__info__wrapper-2{
+
+.singledestination__info__wrapper-2 {
   display: flex;
   flex-direction: column;
   width: 39%;
   justify-self: flex-end;
 }
 
-.singledestination__info__wrapper{
+.singledestination__info__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 
 }
 
-.single__icon{
+.single__icon {
   font-size: 2.3rem;
   margin-right: .5rem;
   color: $color-main-dark;
 }
 
 
-.related__attraction{
+.related__attraction {
   margin: 0 auto;
   width: 80rem;
   margin-top: 2rem;
   display: flex;
   padding: 2rem 0;
   box-shadow: 2px 5px 16px rgb(161, 161, 161);
-  &__title{
+
+  &__title {
     font-size: 3rem;
     font-weight: bold;
     margin-top: 8rem;
     border-bottom: 2px solid $color-secondary-dark
   }
-  &__info{
+
+  &__info {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: .5rem;
-    &-wrapper{
+
+    &-wrapper {
       display: flex;
       justify-content: space-between;
     }
-    &-1{
+
+    &-1 {
       display: flex;
       flex-direction: column;
       width: 60%;
     }
-    &-2{
-        display: flex;
-        flex-direction: column;
+
+    &-2 {
+      display: flex;
+      flex-direction: column;
       width: 40%;
     }
   }
 
-  &__img{
+  &__img {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
     float: left;
   }
-  &__header{
+
+  &__header {
     font-size: 3rem;
   }
-  &__duration{
+
+  &__duration {
     font-size: 2.5rem;
     margin-top: 1rem;
     font-weight: bold;
   }
-  &__price{
+
+  &__price {
     font-size: 2.5rem;
     margin-top: 1rem;
     font-weight: bold;
   }
-  &__rating{
+
+  &__rating {
     font-size: 2.5rem;
     margin-top: 1rem;
     font-weight: bold;
   }
-  &__button{
+
+  &__button {
     @include border-bottom-bottun;
     font-size: 2.5rem;
     margin-top: 1rem;
     font-weight: bold;
     width: max-content;
     padding: 0;
-    &:hover{
+
+    &:hover {
       transform: translateY(-5px);
     }
-    &:focus{
+
+    &:focus {
       transform: translateY(0);
     }
-    &__disabled{
+
+    &__disabled {
       margin-top: 1rem;
       @include border-bottom-bottun;
       font-size: 2rem;
       width: max-content;
       cursor: not-allowed;
-      span{
+
+      span {
         font-size: 1rem;
       }
     }
   }
-  &__icon{
+
+  &__icon {
     font-size: 1.8rem;
     margin-right: .1rem;
     color: $color-secondary-dark;
@@ -190,49 +218,59 @@
   }
 }
 
-@media #{$phone}, #{$tab-p}{
-  .singledestination{
-    &__wrapper{
+@media #{$phone},
+#{$tab-p} {
+  .singledestination {
+    &__wrapper {
       margin-top: 11rem;
     }
   }
 }
 
-@media #{$phone}{
-  .singledestination{
-    &__wrapper{
-      &__img{
+@media #{$phone} {
+  .singledestination {
+    &__wrapper {
+      &__img {
         max-width: 95vw;
         margin: 0;
       }
-      &__text{
+
+      &__text {
         max-width: 95vw;
         font-size: 3rem;
-        &__duration{
-        font-size: 3rem;
+
+        &__duration {
+          font-size: 3rem;
         }
-        &__price{
-        font-size: 3rem;
+
+        &__price {
+          font-size: 3rem;
         }
-        &__story{
-        font-size: 3rem;
+
+        &__story {
+          font-size: 3rem;
         }
-        &__rating{
-        font-size: 3rem;
+
+        &__rating {
+          font-size: 3rem;
         }
-        &__available{
-        font-size: 3rem;
+
+        &__available {
+          font-size: 3rem;
         }
-        &__button{
+
+        &__button {
           @include transparent-button;
           align-self: center;
           font-size: 3rem;
           margin-left: -4rem;
           width: 100%;
-          &__disabled{
+
+          &__disabled {
             width: 100%;
             font-size: 2.5rem;
-            span{
+
+            span {
               font-size: 1.8rem;
             }
           }
@@ -241,54 +279,76 @@
     }
   }
 
-.singledestination__info__wrapper-1{
-  width: 65%;
-}
-.singledestination__info__wrapper-2{
-  width: 35%;
-  justify-self: flex-end;
-}
+  .singledestination__info__wrapper-1 {
+    width: 65%;
+  }
 
-.related__attraction{
-  max-width: 95vw;
-  &__header{
-    font-size: 3.5rem;
+  .singledestination__info__wrapper-2 {
+    width: 35%;
+    justify-self: flex-end;
   }
-  &__duration{
-    font-size: 3rem;
-  }
-  &__price{
-    font-size: 3rem;
 
-  }
-  &__rating{
-    font-size: 3rem;
+  .related__attraction {
+    max-width: 95vw;
 
-  }
-  &__button{
-    font-size: 3rem;
-    border-width: 1px;
-    &__disabled{
-      font-size: 2.5rem;
-      width: max-content;
+    &__header {
+      font-size: 3.5rem;
+    }
+
+    &__duration {
+      font-size: 3rem;
+    }
+
+    &__price {
+      font-size: 3rem;
+
+    }
+
+    &__rating {
+      font-size: 3rem;
+
+    }
+
+    &__button {
+      font-size: 3rem;
       border-width: 1px;
-      cursor: not-allowed;
-      span{
-        font-size: 1.8rem;
-        margin-left: -.1rem;
+
+      &__disabled {
+        font-size: 2.5rem;
+        width: max-content;
+        border-width: 1px;
+        cursor: not-allowed;
+
+        span {
+          font-size: 1.8rem;
+          margin-left: -.1rem;
+        }
       }
     }
-}
-&__info{
 
-  &-1{
-    width: 60%;
-    margin-right: 2rem;
+    &__info {
+
+      &-1 {
+        width: 60%;
+        margin-right: 2rem;
+      }
+
+      &-2 {
+        width: 40%;
+      }
+    }
   }
-  &-2{
-    width: 40%;
-  }
-}
+
 }
 
+@media screen and (max-width: 1200px){
+  .singledestination {
+    &__wrapper {
+      &__img {
+        width: 80rem;
+        height: 40rem;
+        margin-top: 1rem;
+      }
+    }
+  }  
 }
