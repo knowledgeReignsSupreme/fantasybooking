@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { destinationsData, attractionsData } from '../../data';
-// import Carousel from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
-import CustomCarousel from '../../Components/CustomCarousel';
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+import CustomCarouel from '../../Components/CustomCarousel';
 import {
   FaClock,
   FaCoins,
@@ -14,6 +14,8 @@ import {
 } from 'react-icons/fa';
 
 export default function SingleDestination({ match }) {
+  const [imageValue, setImageValue] = useState(0);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,10 +23,14 @@ export default function SingleDestination({ match }) {
   let currentDestination = destinationsData[match.params.id];
   let currentAttraction = attractionsData[match.params.id];
 
+  const handleImageSwipe = (value) => {
+    setImageValue(+value);
+  };
+
   return (
     <>
       <div className='singledestination__wrapper'>
-        <CustomCarousel imagesToRender={currentDestination} />
+       <CustomCarouel imagesToRender={currentDestination} />
         <div className='singledestination__wrapper__text'>
           <h1 className='singledestination__wrapper__text__header'>
             {currentDestination.destination}

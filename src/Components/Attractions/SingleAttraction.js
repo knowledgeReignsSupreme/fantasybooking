@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { destinationsData, attractionsData } from '../../data';
 import CustomCarousel from '../../Components/CustomCarousel';
 import {
@@ -12,6 +12,8 @@ import {
 } from 'react-icons/fa';
 
 export default function SingleAttraction({ match }) {
+  const [imageValue, setImageValue] = useState(0);
+
   let currentDestination = destinationsData[match.params.id];
   let currentAttraction = attractionsData[match.params.id];
 
@@ -19,10 +21,12 @@ export default function SingleAttraction({ match }) {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleImageSwipe = value => setImageValue(value);
+  
   return (
     <>
       <div className='singledestination__wrapper'>
-       <CustomCarousel imagesToRender={currentAttraction} />
+      <CustomCarousel imagesToRender={currentAttraction} />
         <div className='singledestination__wrapper__text'>
           <h1 className='singledestination__wrapper__text__header'>
             {currentAttraction.attraction}
