@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaClock, FaCoins, FaBook, FaStar, FaSuitcase, FaBan  } from 'react-icons/fa';
+import {FaDungeon, FaClock, FaCoins, FaBook, FaStar, FaSuitcase, FaBan  } from 'react-icons/fa';
 
 export default function DestinationsRendere({attractions, destinations, attractionNameFilter, attractionStoryFilter, attractionMaxPrice}) {
  console.log(attractionNameFilter)
@@ -22,6 +22,7 @@ export default function DestinationsRendere({attractions, destinations, attracti
         </div>
         <div className="attraction__text">
         <h1 className="attraction__text__header">{attraction.attraction}</h1>
+        <p className="attraction__text__duration"><FaDungeon className="attraction__icon"/>Location: {attraction.location}</p>
         <p className="attraction__text__duration"><FaClock className="attraction__icon"/>Duration: {attraction.howLong}minutes</p>
         <p className="attraction__text__price"><FaCoins className="attraction__icon"/>From: ${attraction.price}</p>
         <p className="attraction__text__known"><FaBook className="attraction__icon"/>Knowm from: "{attraction.knownFrom}"</p>
