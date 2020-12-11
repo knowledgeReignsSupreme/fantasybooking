@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/fantasybooking/static/css/main.31f338d2.chunk.css",
-    "main.js": "/fantasybooking/static/js/main.5374c52c.chunk.js",
-    "main.js.map": "/fantasybooking/static/js/main.5374c52c.chunk.js.map",
-    "runtime-main.js": "/fantasybooking/static/js/runtime-main.00c1e481.js",
-    "runtime-main.js.map": "/fantasybooking/static/js/runtime-main.00c1e481.js.map",
-    "static/js/2.62b55ac2.chunk.js": "/fantasybooking/static/js/2.62b55ac2.chunk.js",
-    "static/js/2.62b55ac2.chunk.js.map": "/fantasybooking/static/js/2.62b55ac2.chunk.js.map",
-    "static/js/3.828f9f88.chunk.js": "/fantasybooking/static/js/3.828f9f88.chunk.js",
-    "static/js/3.828f9f88.chunk.js.map": "/fantasybooking/static/js/3.828f9f88.chunk.js.map",
+    "main.css": "/fantasybooking/static/css/main.2f61fbd3.chunk.css",
+    "main.js": "/fantasybooking/static/js/main.69f700f2.chunk.js",
+    "main.js.map": "/fantasybooking/static/js/main.69f700f2.chunk.js.map",
+    "runtime-main.js": "/fantasybooking/static/js/runtime-main.28d76cbc.js",
+    "runtime-main.js.map": "/fantasybooking/static/js/runtime-main.28d76cbc.js.map",
+    "static/css/2.852b0271.chunk.css": "/fantasybooking/static/css/2.852b0271.chunk.css",
+    "static/js/2.9c5a3729.chunk.js": "/fantasybooking/static/js/2.9c5a3729.chunk.js",
+    "static/js/2.9c5a3729.chunk.js.map": "/fantasybooking/static/js/2.9c5a3729.chunk.js.map",
+    "static/js/3.2ea8e840.chunk.js": "/fantasybooking/static/js/3.2ea8e840.chunk.js",
+    "static/js/3.2ea8e840.chunk.js.map": "/fantasybooking/static/js/3.2ea8e840.chunk.js.map",
     "index.html": "/fantasybooking/index.html",
-    "static/css/main.31f338d2.chunk.css.map": "/fantasybooking/static/css/main.31f338d2.chunk.css.map",
-    "static/js/2.62b55ac2.chunk.js.LICENSE.txt": "/fantasybooking/static/js/2.62b55ac2.chunk.js.LICENSE.txt",
+    "static/css/2.852b0271.chunk.css.map": "/fantasybooking/static/css/2.852b0271.chunk.css.map",
+    "static/css/main.2f61fbd3.chunk.css.map": "/fantasybooking/static/css/main.2f61fbd3.chunk.css.map",
+    "static/js/2.9c5a3729.chunk.js.LICENSE.txt": "/fantasybooking/static/js/2.9c5a3729.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/fantasybooking/static/media/true.644d0c65.png",
     "static/media/Phone Logo.ec1d3a07.svg": "/fantasybooking/static/media/Phone Logo.ec1d3a07.svg",
     "static/media/Vector.49bb48f1.svg": "/fantasybooking/static/media/Vector.49bb48f1.svg",
@@ -21,9 +23,10 @@
     "static/media/unicorn.3d00c71b.jpg": "/fantasybooking/static/media/unicorn.3d00c71b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.00c1e481.js",
-    "static/js/2.62b55ac2.chunk.js",
-    "static/css/main.31f338d2.chunk.css",
-    "static/js/main.5374c52c.chunk.js"
+    "static/js/runtime-main.28d76cbc.js",
+    "static/css/2.852b0271.chunk.css",
+    "static/js/2.9c5a3729.chunk.js",
+    "static/css/main.2f61fbd3.chunk.css",
+    "static/js/main.69f700f2.chunk.js"
   ]
 }
