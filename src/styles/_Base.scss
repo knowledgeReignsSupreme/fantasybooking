@@ -5,6 +5,11 @@ html {
 body {
   font-family: 'Cormorant', serif;
   color: $font-color;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .line {

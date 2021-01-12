@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { destinationsData, attractionsData } from '../../data';
+import { Link } from 'react-router-dom';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import CustomCarouel from '../../Components/CustomCarousel';
@@ -30,7 +31,7 @@ export default function SingleDestination({ match }) {
   return (
     <>
       <div className='singledestination__wrapper'>
-       <CustomCarouel imagesToRender={currentDestination} />
+        <CustomCarouel imagesToRender={currentDestination} />
         <div className='singledestination__wrapper__text'>
           <h1 className='singledestination__wrapper__text__header'>
             {currentDestination.destination}
@@ -82,52 +83,53 @@ export default function SingleDestination({ match }) {
           <h3 className='related__attraction__title'>Related Attraction:</h3>
         </div>
       </div>
+      <Link to={`/attractions/${currentAttraction.id}`}>
+        <div className='related__attraction'>
+          <img
+            src={currentAttraction.images[0]}
+            className='related__attraction__img'
+            alt={currentAttraction.attraction}
+          />
 
-      <div className='related__attraction'>
-        <img
-          src={currentAttraction.images[0]}
-          className='related__attraction__img'
-          alt={currentAttraction.attraction}
-        />
-
-        <div className='related__attraction__info'>
-          <p className='related__attraction__header'>
-            {currentAttraction.attraction}
-          </p>
-          <div className='related__attraction__info-wrapper'>
-            <div className='related__attraction__info-1'>
-              <p className='related__attraction__duration'>
-                <FaClock className='related__attraction__icon' /> Duration:{' '}
-                {currentAttraction.howLong}minutes
-              </p>
-              <p className='related__attraction__price'>
-                <FaCoins className='related__attraction__icon' /> From: $
-                {currentAttraction.price}
-              </p>
-            </div>
-            <div className='related__attraction__info-2'>
-              <p className='related__attraction__rating'>
-                <FaStar className='related__attraction__icon' /> Rating:{' '}
-                {currentAttraction.rating}/5.0
-              </p>
-              {currentAttraction.available ? (
-                <button className='related__attraction__button'>
-                  <FaSuitcaseRolling className='related__attraction__icon' />
-                  Book &rarr;
-                </button>
-              ) : (
-                <button
-                  className='related__attraction__button__disabled'
-                  disabled={currentDestination.available}
-                >
-                  <FaBan className='related__attraction__icon' />
-                  N/A <span>due to pandemic</span>
-                </button>
-              )}
+          <div className='related__attraction__info'>
+            <p className='related__attraction__header'>
+              {currentAttraction.attraction}
+            </p>
+            <div className='related__attraction__info-wrapper'>
+              <div className='related__attraction__info-1'>
+                <p className='related__attraction__duration'>
+                  <FaClock className='related__attraction__icon' /> Duration:{' '}
+                  {currentAttraction.howLong}minutes
+                </p>
+                <p className='related__attraction__price'>
+                  <FaCoins className='related__attraction__icon' /> From: $
+                  {currentAttraction.price}
+                </p>
+              </div>
+              <div className='related__attraction__info-2'>
+                <p className='related__attraction__rating'>
+                  <FaStar className='related__attraction__icon' /> Rating:{' '}
+                  {currentAttraction.rating}/5.0
+                </p>
+                {currentAttraction.available ? (
+                  <button className='related__attraction__button'>
+                    <FaSuitcaseRolling className='related__attraction__icon' />
+                    Book &rarr;
+                  </button>
+                ) : (
+                  <button
+                    className='related__attraction__button__disabled'
+                    disabled={currentDestination.available}
+                  >
+                    <FaBan className='related__attraction__icon' />
+                    N/A <span>due to pandemic</span>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
