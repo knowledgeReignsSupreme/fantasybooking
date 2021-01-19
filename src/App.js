@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import './styles/main.scss';
 import { destinationsData, attractionsData, postsData } from './data';
 import Home from './Pages/Home';
-import { Route, BrowserRouter, Switch, Link } from 'react-router-dom';
+import {
+  Route,
+  BrowserRouter,
+  Switch,
+  Link,
+  HashRouter,
+} from 'react-router-dom';
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Logo from './design/Vector.svg';
@@ -19,7 +25,8 @@ function App() {
   const [posts, setPosts] = useState(postsData);
   const [navOn, setNavOn] = useState(false);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    // <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       {!navOn ? (
         <Link to='/' exact='true'>
           <img src={Logo} alt='logo' className='abs-logo' />{' '}
@@ -74,9 +81,10 @@ function App() {
         <Route path='/blog/post/:id' exact component={SinglePost} />
         <Route path='/destinations/:id' exact component={SingleDestination} />
         <Route path='/attractions/:id' ex component={SingleAttraction} />
+        <Route component={Home} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

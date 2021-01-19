@@ -2,7 +2,7 @@
   "name": "fantasy-booking",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://knowledgeReignsSupreme.github.io/fantasybooking/",
+  "homepage": "http://knowledgeReignsSupreme.github.io/fantasybooking",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^5.11.6",

@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 }
 
-.attractions__img__wrapper{
+.attractions__img__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -19,17 +19,20 @@
   height: 45rem;
   width: 70vw;
   margin-bottom: 5rem;
-  border: 4px solid $color-main-dark;
   margin-left: 3rem;
   border-radius: 25px;
   transition: all .5s ease-out;
-  &:not(:first-of-type){
-  margin-top: 3rem;
+  box-shadow: 0 1.5px 5px rgba(0, 0, 0, 0.2);
+
+  &:not(:first-of-type) {
+    margin-top: 3rem;
   }
-  &:hover{
+
+  &:hover {
     border-width: 6px;
     transform: scale(1.02);
   }
+
   &__icon {
     color: $color-secondary-dark;
     margin-right: .7rem;
@@ -46,11 +49,13 @@
     border-radius: 20px;
 
   }
+
   &__button {
     @include transparent-button;
     font-size: 4rem;
     width: 95%;
     margin: 0 1rem;
+
     &__disabled {
       @include transparent-button;
       cursor: not-allowed;
@@ -58,11 +63,13 @@
       font-size: 4rem;
       margin: 0 1rem;
       width: 95%;
-      span{
+
+      span {
         font-size: 2.5rem;
       }
     }
   }
+
   &__text {
     width: 95%;
     display: flex;
@@ -73,7 +80,7 @@
 
     &__header {
       @include section-header-sub;
-      
+
     }
 
     &__arrival {
@@ -105,13 +112,13 @@
       margin-bottom: 2rem;
     }
 
-    
+
   }
 
 }
 
 
-.attractions__header__wrapper{
+.attractions__header__wrapper {
   background-image: url('../../design/attrheader 1.jpg'), linear-gradient(to top, $color-secondary-dark, $color-main-dark);
   // filter: hue-rotate(30deg);
   background-size: cover;
@@ -122,11 +129,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &__header{
+
+  &__header {
     @include section-header;
-    &-sub{
+
+    &-sub {
       @include section-header-sub;
-        span{
+
+      span {
         @include section-header-sub-span;
         border-color: $color-main-light;
         border-width: 5px;
@@ -135,56 +145,68 @@
   }
 }
 
-@media #{$phone}, #{$tab-p}, #{$tab-l}{
-  .attraction{
+@media #{$phone},
+#{$tab-p},
+#{$tab-l} {
+  .attraction {
     width: 100vw !important;
-    &:hover{
+
+    &:hover {
       border-width: 4px;
       transform: none;
     }
   }
 }
-@media #{$phone}, #{$tab-p}{
-.attraction{
-  margin-left: 1rem;
-}
+
+@media #{$phone},
+#{$tab-p} {
+  .attraction {
+    margin-left: 1rem;
+  }
+
   .attractions__wrapper {
     margin-top: 2rem !important;
   }
-.attractions__header__wrapper{
-  margin-top: 12rem;
-  align-items: flex-start;
-  height: 30vh;
 
-  &__header{
-    font-size: 5rem;
-    margin-left: 1rem;
+  .attractions__header__wrapper {
+    margin-top: 12rem;
+    align-items: flex-start;
+    height: 30vh;
 
-    &-sub{
-      font-size: 4rem;
+    &__header {
+      font-size: 5rem;
       margin-left: 1rem;
+
+      &-sub {
+        font-size: 4rem;
+        margin-left: 1rem;
+      }
     }
   }
-}
+
   .attractions__wrapper {
     margin-top: 4rem;
   }
 }
 
-@media #{$phone}{
-  .attraction{
+@media #{$phone} {
+  .attraction {
     width: 100vw !important;
     border-width: 2px;
-    &__img{
+
+    &__img {
       height: 20rem;
       width: 25rem;
     }
-    &__button{
+
+    &__button {
       font-size: 3rem;
       border-width: 1px;
-      &__disabled{
+
+      &__disabled {
         font-size: 3rem;
-        span{
+
+        span {
           font-size: 2rem;
         }
       }
